@@ -1,0 +1,15 @@
+{
+  "short_name": "ministry-dashboard",
+  "name": "ministry-dashboard",
+  "icons": [
+    {
+      "src": "assets/images/New_Project__1_-1767357804834.jpg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
