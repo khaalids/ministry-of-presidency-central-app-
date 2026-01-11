@@ -60,13 +60,13 @@ const DepartmentPerformanceChart = ({ data }) => {
             />
             <Bar 
               dataKey="efficiency" 
-              fill="var(--color-primary)" 
+              fill="#2563eb" 
               name="Efficiency Score"
               radius={[8, 8, 0, 0]}
             />
             <Bar 
               dataKey="completion" 
-              fill="var(--color-accent)" 
+              fill="#10b981" 
               name="Task Completion"
               radius={[8, 8, 0, 0]}
             />

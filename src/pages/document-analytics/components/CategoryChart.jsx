@@ -7,12 +7,12 @@ const CategoryChart = ({ data, onCategoryClick }) => {
   const total = data?.reduce((sum, item) => sum + item?.count, 0);
   
   const colors = [
-    'var(--color-primary)',
-    'var(--color-accent)',
-    'var(--color-secondary)',
-    'var(--color-success)',
-    'var(--color-warning)',
-    'var(--color-error)'
+    '#2563eb',
+    '#10b981',
+    '#f59e0b',
+    '#8b5cf6',
+    '#ec4899',
+    '#14b8a6'
   ];
 
   const calculatePercentage = (count) => {

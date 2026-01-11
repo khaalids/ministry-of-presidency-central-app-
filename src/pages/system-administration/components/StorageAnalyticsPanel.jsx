@@ -4,11 +4,11 @@ import Icon from '../../../components/AppIcon';
 
 const StorageAnalyticsPanel = ({ storageData, uploadQueue }) => {
   const COLORS = [
-    'var(--color-primary)',
-    'var(--color-accent)',
-    'var(--color-secondary)',
-    'var(--color-success)',
-    'var(--color-warning)'
+    '#2563eb',
+    '#10b981',
+    '#f59e0b',
+    '#8b5cf6',
+    '#ec4899'
   ];
 
   const CustomTooltip = ({ active, payload }) => {
@@ -67,7 +67,7 @@ const StorageAnalyticsPanel = ({ storageData, uploadQueue }) => {
                   cy="50%"
                   labelLine={false}
                   outerRadius={80}
-                  fill="var(--color-primary)"
+                  fill="#2563eb"
                   dataKey="value"
                 >
                   {storageData?.map((entry, index) => (

@@ -98,7 +98,7 @@ const DatabasePerformancePanel = ({ data, connectionStats }) => {
             <Tooltip content={<CustomTooltip />} />
             <Bar 
               dataKey="responseTime" 
-              fill="var(--color-primary)" 
+              fill="#2563eb" 
               radius={[8, 8, 0, 0]}
             />
           </BarChart>

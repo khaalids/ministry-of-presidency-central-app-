@@ -8,13 +8,13 @@ const PerformanceTrendChart = ({ data, selectedDepartments }) => {
   const [timeRange, setTimeRange] = useState('6months');
 
   const departmentColors = {
-    'Finance': 'var(--color-primary)',
-    'Human Resources': 'var(--color-secondary)',
-    'Operations': 'var(--color-accent)',
-    'Legal Affairs': 'var(--color-success)',
-    'Communications': 'var(--color-warning)',
-    'Strategic Planning': '#8B7355',
-    'Information Technology': '#A0826D'
+    'Finance': '#2563eb',
+    'Human Resources': '#10b981',
+    'Operations': '#f59e0b',
+    'Legal Affairs': '#8b5cf6',
+    'Communications': '#ec4899',
+    'Strategic Planning': '#14b8a6',
+    'Information Technology': '#6366f1'
   };
 
   const CustomTooltip = ({ active, payload, label }) => {
@@ -107,7 +107,7 @@ const PerformanceTrendChart = ({ data, selectedDepartments }) => {
                     activeDot={{ r: 6 }}
                   />
                 ))}
-                <Bar dataKey="resourceAllocation" fill="var(--color-muted)" opacity={0.3} />
+                <Bar dataKey="resourceAllocation" fill="#64748b" opacity={0.3} />
               </ComposedChart>
             ) : chartType === 'line' ? (
               <LineChart data={data}>

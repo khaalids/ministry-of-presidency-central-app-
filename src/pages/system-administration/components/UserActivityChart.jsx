@@ -3,10 +3,10 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 const UserActivityChart = ({ data, selectedMetrics, onMetricToggle }) => {
   const metrics = [
-    { key: 'logins', label: 'User Logins', color: 'var(--color-primary)' },
-    { key: 'documentUploads', label: 'Document Uploads', color: 'var(--color-accent)' },
-    { key: 'taskCompletions', label: 'Task Completions', color: 'var(--color-success)' },
-    { key: 'apiCalls', label: 'API Calls', color: 'var(--color-secondary)' }
+    { key: 'logins', label: 'User Logins', color: '#2563eb' },
+    { key: 'documentUploads', label: 'Document Uploads', color: '#10b981' },
+    { key: 'taskCompletions', label: 'Task Completions', color: '#f59e0b' },
+    { key: 'apiCalls', label: 'API Calls', color: '#8b5cf6' }
   ];
 
   const CustomTooltip = ({ active, payload, label }) => {
