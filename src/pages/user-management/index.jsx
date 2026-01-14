@@ -195,12 +195,12 @@ const UserManagement = () => {
               </p>
             </div>
             {activeTab === 'users' && (
-              <button
-                onClick={() => setIsCreateModalOpen(true)}
-                className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-smooth hover-lift press-scale"
-              >
-                <Icon name="UserPlus" size={20} strokeWidth={2} />
-                <span className="font-body font-medium">Create User</span>
+            <button
+              onClick={() => setIsCreateModalOpen(true)}
+              className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-smooth hover-lift press-scale"
+            >
+              <Icon name="UserPlus" size={20} strokeWidth={2} />
+              <span className="font-body font-medium">Create User</span>
               </button>
             )}
             {activeTab === 'ministries' && (
@@ -320,21 +320,21 @@ const UserManagement = () => {
             </div>
           </div>
 
-              <div className="bg-card rounded-lg border border-border">
-                {isLoading ? (
-                  <div className="flex items-center justify-center py-12">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-                  </div>
-                ) : (
-                  <UserTable
-                    users={filteredUsers}
-                    onEdit={handleEditUser}
-                    onDeactivate={handleDeactivateUser}
-                    onReactivate={handleReactivateUser}
-                    onResetPassword={handleResetPassword}
-                  />
-                )}
+          <div className="bg-card rounded-lg border border-border">
+            {isLoading ? (
+              <div className="flex items-center justify-center py-12">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
               </div>
+            ) : (
+              <UserTable
+                users={filteredUsers}
+                onEdit={handleEditUser}
+                onDeactivate={handleDeactivateUser}
+                onReactivate={handleReactivateUser}
+                onResetPassword={handleResetPassword}
+              />
+            )}
+          </div>
             </>
           )}
 
